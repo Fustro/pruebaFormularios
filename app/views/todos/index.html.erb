@@ -1,0 +1,28 @@
+<h1>index</h1>
+
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text"><h5>· Completado</h5>
+      <%= @todo.each do |todo|%>
+        <%= todo.content %>
+      <% end %>
+    </p>
+  </div>
+</div>
+
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text"><h5>· No Completado</h5></p>
+  </div>
+</div>
+
+
+
+
+
+
+<%= link_to 'to to do',  todos_new_path %>
